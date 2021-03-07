@@ -1,0 +1,4 @@
+<% if logged_in? %>
+<p>ログイン完了ユーザー:<%= current_user_name %></p>
+<% else %>
+<%= link_to "ログインへ", login_path %>
